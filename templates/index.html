@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laxnode Solutions</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Laxnode Solutions</h1>
+        <nav>
+            <ul>
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#software-solutions">Software Solutions</a></li>
+                <li><a href="#mechanical-engineering">Mechanical Engineering</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="hero">
+            <h2>Software Solutions & Mechanical Engineering</h2>
+        </section>
+        <section id="software-solutions">
+            <h2>Software Solutions</h2>
+            <p>Interactive code snippets and 3D visualization of a neural network.</p>
+        </section>
+        <section id="mechanical-engineering">
+            <h2>Mechanical Engineering</h2>
+            <p>Interactive 3D models of process systems, piping, and pressure vessels.</p>
+        </section>
+        <section id="team">
+            <h2>Team and Expertise</h2>
+            <p>Animated skill charts for team members and interactive organizational structure.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <script src="{{ url_for('static', filename='scripts.js') }}"></script>
+</body>
+</html>
