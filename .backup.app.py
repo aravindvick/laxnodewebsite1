@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-
-from flask import Flask, render_template
-=======
 from flask import Flask, render_template, jsonify
->>>>>>> 6942e60e347183e871c9ba60d03dd780e1f6bc54
 
 app = Flask(__name__)
 
@@ -11,10 +6,6 @@ app = Flask(__name__)
 def index():
     return render_template('index.html')
 
-<<<<<<< HEAD
-if __name__ == '__main__':
-    app.run(debug=True)
-=======
 @app.route('/software-solutions')
 def software_solutions():
     return render_template('software_solutions.html')
@@ -32,5 +23,4 @@ def contact():
     return render_template('contact.html')
 
 if __name__ == '__main__':
-    app.run(debug=True, port=5004)
->>>>>>> 6942e60e347183e871c9ba60d03dd780e1f6bc54
+    app.run(debug=True, port=5003)
