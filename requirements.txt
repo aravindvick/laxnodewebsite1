@@ -1,0 +1,7 @@
+
+Flask==2.0.1
+three==0.128.0
+gsap==3.9.1
+particles.js==2.0.0
+framer-motion==4.1.17
+tailwindcss==2.2.19
